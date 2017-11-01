@@ -533,4 +533,6 @@ transition:all 1s;
 
 .social-icons ul li a {
     font-size: 20px;
+    padding-top: 10px;
+
 }
