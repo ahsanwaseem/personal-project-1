@@ -277,3 +277,37 @@ transition:all 1s;
   line-height: 27px;
   padding-top: 50px;
 }
+
+/*Purchase Now*/
+
+.purchase-now {
+    background-color: #1A1A1A;
+    padding: 100px 0;
+}
+
+.purchase-now p {
+    color: #DFDFDF;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.btn-purchase-now,
+.btn-purchase-now:active ,
+.btn-purchase-now:focus ,
+.btn-purchase-now:visited {
+    background-color: #129CF3;
+    border: 1px solid #129CF3;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.btn-purchase-now:hover {
+    background-color: #1274B1;
+    border-color: #316890;
+}
