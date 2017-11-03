@@ -62,3 +62,48 @@ $(document).ready(function(){
   });
 
 });
+
+// Active Menu Item on Click
+
+
+$(document).ready(function(){
+
+  'use strict';
+
+  $('.navbar-nav li a').click(function(){
+
+    'use strict';
+    $('.navbar-nav li a').parent().removeClass('active');
+    $(this).parent().addClass('active');
+  });
+});
+
+// Highlight Menu Item on Scroll
+
+$(document).ready(function(){
+
+  'use strict';
+
+  $(window).scroll(function(){
+
+    'use strict';
+
+    $("section").each(function(){
+
+      'use strict';
+      var bb = $(this).attr("id");
+      var hei = $(this).outerHeight();
+      var grttop = $(this).offset().top - 70 ;
+
+      if($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei) {
+        $(".navbar-nav li a[href = '#" + bb + "']").parent().addClass("active");
+        }
+      else {
+                $(".navbar-nav li a[href = '#" + bb + "']").parent().removeClass("active");
+        }
+
+    });
+
+  });
+
+});
