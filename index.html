@@ -6,11 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,800,900" rel="stylesheet" type="text/css">
 
+
     <link rel="icon" type="image/png" href="images/favicon.png">
     <title>LoSo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+
   </head>
   <body>
     <header class="header" id="HOME">
@@ -45,7 +48,7 @@
    </div><!-- /.container-fluid -->
 </nav>
       <div class="header-overlay">
-        <div class="container">
+        <div class="container header-container">
           <div class="row">
             <div class="col-md-12">
               <div class="logo text-center">
@@ -319,22 +322,26 @@
                     </div>
                 </div>
             </div>
-            <div class="screen-slider">
-                <div class="carousel">
-                            <div class="item">
-                                <img src="images/screen-01.png" width="60" height="60"  alt="screen">
-                            </div>
-                            <div class="item">
-                                <img src="images/screen-02.png" width="60" height="60"  alt="screen">
-                            </div>
-                            <div class="item">
-                                <img src="images/screen-03.png" width="60" height="60"  alt="screen">
-                            </div>
-                            <div class="item">
-                                <img src="images/screen-04.png" width="60" height="60"  alt="screen">
-                            </div>
-                        </div>
-                 </div>
+            <div class="screen-slider wow bounceInRight" data-wow-duration="1s">
+                          <div class="container">
+                             <div class="row">
+                                 <div class="bxslider">
+                                      <div class="item">
+                                          <img src="images/screen-01.png"  alt="screen">
+                                      </div>
+                                      <div class="item">
+                                          <img src="images/screen-02.png"  alt="screen">
+                                      </div>
+                                      <div class="item">
+                                          <img src="images/screen-03.png"  alt="screen">
+                                      </div>
+                                      <div class="item">
+                                          <img src="images/screen-04.png"  alt="screen">
+                                      </div>
+                                  </div>
+                           </div>
+                          </div>
+                      </div>
         </section>
 
         <!-- Counter -->
@@ -522,6 +529,7 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/custom.js"></script>
   </body>
 </html>

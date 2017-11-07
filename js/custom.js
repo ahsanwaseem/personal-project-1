@@ -96,14 +96,50 @@ $(document).ready(function(){
       var grttop = $(this).offset().top - 70 ;
 
       if($(window).scrollTop() > grttop && $(window).scrollTop() < grttop + hei) {
-        $(".navbar-nav li a[href = '#" + bb + "']").parent().addClass("active");
+      $(".navbar-nav li a[href = '#" + bb + "']").parent().addClass("active");
         }
       else {
-                $(".navbar-nav li a[href = '#" + bb + "']").parent().removeClass("active");
+        $(".navbar-nav li a[href = '#" + bb + "']").parent().removeClass("active");
         }
 
     });
 
   });
 
+});
+
+// add auto padding
+
+$(document).ready(function(){
+
+    'use strict';
+    setInterval(function(){
+
+        'use strict';
+        var windowHeight = $(window).height();
+        var containerHeight = $(".header-container").height();
+        var padTop = windowHeight - containerHeight;
+        console.log(padTop)
+
+        $(".header-container").css ({
+
+            'padding-top': Math.round(padTop/2)+'px',
+            'padding-bottom': Math.round(padTop/2)+'px'
+
+        });
+
+    }, 10)
+
+});
+
+// Add Bx-Slider
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+      slideWidth: 292.5,
+      auto: true,
+      minSlides: 1,
+      maxSlides: 3,
+      slideMargin: 50
+  });
 });
