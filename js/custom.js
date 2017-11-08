@@ -154,3 +154,10 @@ $(document).ready(function(){
     });
 
 });
+
+// Add Animation / Initialize WoW
+
+$(document).ready(function(){
+    'use strict';
+    new WOW().init();
+});
